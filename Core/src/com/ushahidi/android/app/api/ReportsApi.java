@@ -73,19 +73,19 @@ public class ReportsApi extends UshahidiApi {
 		log("Save report");
 		if (processingResult) {
 			try {
-				List<Incidents> incidents = task.all();
+				List<Incidents> incidents = task.sinceId(4);
 				if (incidents != null && incidents.size() > 0) {
 					for (Incidents i : incidents) {
 						ReportEntity report = new ReportEntity();
 						report.setIncident(i.incident);
 						reports.add(report);
 						// save categories
-						if ((i.getCategories() != null)
+						/*if ((i.getCategories() != null)
 								&& (i.getCategories().size() > 0)) {
 							for (Category c : i.getCategories()) {
 								saveCategories(c.getId(), i.incident.getId());
 							}
-						}
+						}*/
 
 						// save media
 						if ((i.getMedia() != null) && (!i.getMedia().isEmpty())) {
