@@ -89,7 +89,7 @@ public class SplashScreenActivity extends FragmentActivity {
                             finish();
                         }
 
-                    }
+                   }
                 }
             }
         };

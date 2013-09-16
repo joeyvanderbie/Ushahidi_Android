@@ -665,8 +665,8 @@ public class Util {
 
             Intent i = new Intent(mActivity.getApplicationContext(), AboutActivity.class);
             mActivity.startActivity(i);
-            mActivity.overridePendingTransition(R.anim.home_enter,
-                    R.anim.home_exit);
+//            mActivity.overridePendingTransition(R.anim.home_enter,
+//                    R.anim.home_exit);
 
         }
 

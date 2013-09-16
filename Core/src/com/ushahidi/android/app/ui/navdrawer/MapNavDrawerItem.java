@@ -21,9 +21,12 @@
 package com.ushahidi.android.app.ui.navdrawer;
 
 import android.content.Intent;
+import android.text.TextUtils;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.ushahidi.android.app.R;
 import com.ushahidi.android.app.ui.phone.ListMapActivity;
+import com.ushahidi.android.app.ui.phone.ReportTabActivity;
 import com.ushahidi.android.app.ui.tablet.DashboardActivity;
 import com.ushahidi.android.app.util.Util;
 
@@ -49,13 +52,15 @@ public class MapNavDrawerItem extends BaseNavDrawerItem {
 
     @Override
     public void onSelectItem() {
-
-        if (Util.isTablet(mActivity.getApplicationContext()))
-
+    	final String deployment = mActivity.getString(R.string.deployment_url);
+        
+    	 if (!TextUtils.isEmpty(deployment)) {
+        	mIntent = new Intent(mActivity.getApplicationContext(), ReportTabActivity.class);
+        }else if (Util.isTablet(mActivity.getApplicationContext())){
             mIntent = new Intent(mActivity.getApplicationContext(), DashboardActivity.class);
-        else
+        }else{
             mIntent = new Intent(mActivity.getApplicationContext(), ListMapActivity.class);
-
+        }
         mActivity.startActivity(mIntent);
 
     }

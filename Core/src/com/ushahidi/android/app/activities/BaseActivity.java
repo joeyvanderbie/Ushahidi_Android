@@ -152,12 +152,12 @@ public abstract class BaseActivity<V extends View> extends
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        if (TextUtils.isEmpty(getString(R.string.deployment_url))) {
+       // if (TextUtils.isEmpty(getString(R.string.deployment_url))) {
             if (drawerLayout != null) {
                 // default deployment is not set
                 createNavDrawer();
             }
-        }
+       // }
 
         AnalyticsUtils.setContext(this);
 
@@ -285,7 +285,7 @@ public abstract class BaseActivity<V extends View> extends
      */
     @Override
     public void onBackPressed() {
-        if (TextUtils.isEmpty(getString(R.string.deployment_url))) {
+        if (TextUtils.isEmpty(getString(R.string.deployment_url)) ||true) {
             if (drawerLayout != null) {
 
                 if (drawerLayout.isDrawerOpen(listView)) {
@@ -325,7 +325,7 @@ public abstract class BaseActivity<V extends View> extends
 
         switch (item.getItemId()) {
             case android.R.id.home:
-                if (TextUtils.isEmpty(getString(R.string.deployment_url))) {
+                if (TextUtils.isEmpty(getString(R.string.deployment_url)) || true) {
                     if (drawerLayout != null) {
 
                         if (drawerLayout.isDrawerOpen(listView)) {

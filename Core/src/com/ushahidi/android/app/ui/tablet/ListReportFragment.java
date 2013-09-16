@@ -247,8 +247,8 @@ public class ListReportFragment
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(this.menu, menu);
         if (TextUtils.isEmpty(getString(R.string.deployment_url))) {
-            menu.findItem(R.id.menu_admin).setVisible(false);
-            menu.findItem(R.id.menu_about).setVisible(false);
+        //    menu.findItem(R.id.menu_admin).setVisible(false);
+         //   menu.findItem(R.id.menu_about).setVisible(false);
             menu.findItem(R.id.menu_settings).setVisible(false);
         }
 
@@ -269,12 +269,12 @@ public class ListReportFragment
         } else if (item.getItemId() == android.R.id.home) {
             getActivity().finish();
             return true;
-        } else if (item.getItemId() == R.id.menu_about) {
-            Util.showAbout(getSherlockActivity());
-            return true;
-        } else if (item.getItemId() == R.id.menu_admin) {
-            startActivityZoomIn(new Intent(getActivity(), AdminActivity.class));
-            return true;
+//        } else if (item.getItemId() == R.id.menu_about) {
+//            Util.showAbout(getSherlockActivity());
+//            return true;
+//        } else if (item.getItemId() == R.id.menu_admin) {
+//            startActivityZoomIn(new Intent(getActivity(), AdminActivity.class));
+//            return true;
         } else if (item.getItemId() == R.id.menu_settings) {
             startActivityZoomIn(new Intent(getActivity(), Settings.class));
             return true;

@@ -12,6 +12,7 @@ import com.ushahidi.android.app.helpers.ReportViewPager;
 import com.ushahidi.android.app.helpers.TabsAdapter;
 import com.ushahidi.android.app.ui.tablet.ListReportFragment;
 import com.ushahidi.android.app.ui.tablet.MapFragment;
+import com.ushahidi.android.app.views.ListMapView;
 import com.ushahidi.android.app.views.ReportTabView;
 
 public class ReportTabActivity extends BaseActivity<ReportTabView> {
@@ -22,7 +23,9 @@ public class ReportTabActivity extends BaseActivity<ReportTabView> {
      * @param menu
      */
     public ReportTabActivity() {
-        super(ReportTabView.class, R.layout.report_tab, 0, 0, 0);
+        //super(ReportTabView.class, R.layout.report_tab, 0,0,0);
+    	super(ReportTabView.class, R.layout.report_tab, 0, R.id.drawer_layout,
+                R.id.left_drawer);
     }
 
     private ReportViewPager mViewPager;

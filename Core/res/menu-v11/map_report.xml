@@ -12,11 +12,7 @@
 -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item
-        android:id="@+id/filter_by"
-        android:icon="@drawable/expand"
-        android:showAsAction="ifRoom"
-        android:title="@string/categories"/>
+
     <item
         android:id="@+id/menu_refresh"
         android:icon="@drawable/refresh"
@@ -27,6 +23,11 @@
         android:icon="@drawable/add"
         android:showAsAction="ifRoom"
         android:title="@string/add_report"/>
+    <item
+        android:id="@+id/filter_by"
+        android:icon="@drawable/expand"
+        android:showAsAction="ifRoom"
+        android:title="@string/categories"/>
     <item
         android:id="@+id/menu_normal"
         android:showAsAction="never"
