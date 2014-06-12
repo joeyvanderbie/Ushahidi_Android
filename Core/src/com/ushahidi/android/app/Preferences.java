@@ -26,7 +26,7 @@ public class Preferences {
 
 	public static String totalReports = "";
 	
-	public static String mapTiles = "";
+	public static String mapTiles = "google";
 
 	public static String fileName = "";
 
