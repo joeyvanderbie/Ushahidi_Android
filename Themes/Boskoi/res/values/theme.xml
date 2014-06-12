@@ -3,7 +3,7 @@
     <!-- DEPLOYMENT INFORMATION -->
     <string name="app_title">Boskoi</string>
     <string name="app_name">Boskoi</string>
-    <string name="deployment_url">http://192.168.2.9/boskoi</string>
+    <string name="deployment_url">http://192.168.134.17/boskoi</string>
     <!-- <string name="deployment_url">http://www.boskoi.org</string> -->
     <string name="team_url">http://boskoi.org/about</string>
     <string name="media_url"/>
@@ -12,10 +12,10 @@
     <string name="contact_url">http://boskoi.org/contact</string>
 
     <!-- DEPLOYMENT PROVIDER AUTHORITIES. USUALLY PACKAGE NAME AND CLASS NAME Eg. com.ushahidi.android.app.data.deploymentprovider -->
-    <string name="provider_authorities">com.ushahidi.android.app.data.deploymentprovider</string>
+    <string name="provider_authorities">org.boskoi.android.app.data.deploymentprovider</string>
 
     <!-- NAMESPACE -->
-    <string name="rounded_corner">http://schemas.android.com/apk/res/com.ushahidi.android.app</string>
+    <string name="rounded_corner">http://schemas.android.com/apk/res/org.boskoi.android.app</string>
      
     <!-- ICON IMAGES -->
     <drawable name="app_icon">@drawable/icon</drawable>
@@ -102,8 +102,8 @@
 	</string>
     <!-- GOOGLE MAPS API -->
     <!-- Dev Key -->
-    <string name="google_map_api_key_dev">AIzaSyByeWOSEFtFvfpKtDcHO8Zg7jFSp0D88lM</string>
+    <string name="google_map_api_key_dev">AIzaSyCEbife_WRN7x10l5QmoZdncgK6GpdByME</string>
     <!-- Live Key -->
-    <string name="google_map_api_key">AIzaSyAUwfY5bdA2xxA4r9Aqn6k82f_RyktwR_I</string>
+    <string name="google_map_api_key">AIzaSyCEbife_WRN7x10l5QmoZdncgK6GpdByME</string>
 
 </resources>
